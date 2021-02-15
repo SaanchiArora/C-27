@@ -3,7 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-
+const Constraint = Matter.Constraint;
 var bob1,bob2,bob3,bob4,bob5;
 var roof;
 var rope1,rope2,rope3,rope4,rope5;
@@ -58,8 +58,9 @@ function draw() {
   rope3.display();
   rope4.display();
   rope5.display();
-}
+
   drawSprites();
+}
  
   function keyPressed() {
 	if(keyCode === UP_ARROW)
