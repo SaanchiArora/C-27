@@ -63,8 +63,7 @@ function draw() {
 }
  
   function keyPressed() {
-	if(keyCode === left_ARROW)
-	 {
+	if(keyDown(LEFT_ARROW)){
 		Body.applyForce(bob1.body,bob5.body.position,{x:-20,y:-20})
 	}
 
